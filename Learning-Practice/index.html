@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .bg-black {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div class="learning">
+        <h1>This is for learning purpose</h1>
+
+        <p>
+        </p>
+
+    </div>
+
+    <script>
+
+        const div = document.createElement('div')
+        console.log(div)
+        div.className = 'main'
+        div.id = Math.round(Math.random() * 10 + 1)
+
+        const addText = document.createTextNode('Chai aur code')
+        div.style.background = 'green'
+        div.style.backgroundColor = 'yellow'
+        div.appendChild(addText)
+        document.body.appendChild(div)
+
+    </script>
+
+</body>
+
+</html>
